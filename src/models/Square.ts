@@ -1,23 +1,20 @@
 import Rectangle from "./Rectangle";
 
-class Square extends Rectangle {
-  getArea() {
-      throw new Error("Method not implemented.");
-  }
+class Square:Rectangle {
+  
   constructor(side: number) {
     super(side, side);
   }
 
-  public setWidth(width: number) {
+  public setlargura(largura: number) {
     // A square must maintain equal sides
-    super.setWidth(width);
-    super.setLength(width);
+    super.setlargura(largura);
+    super.setaltura(largura);
   }
 
-  public setLength(length: number) {
-    super.setWidth(length);
-    super.setLength(length);
+  public setaltura(altura: number) {
+    super.setlarguralturath);
+    super.setaltura(altura);
   }
 }
-
 export default Square;

@@ -1,18 +1,23 @@
-class Rectangle {
-    constructor(private width: number, private length: number) {}
-  
-    public setWidth(width: number) {
-      this.width = width;
+class Rectangle { 
+    largura : number
+    altura : number
+
+    constructor(private largura: number, private altura: number) {
+        this.altura = altura;
+        this.largura = largura;
+    }
+    
+    setLargura(largura: number) {
+        this.largura = largura;
+    }
+    
+    setAltura(altura: number) {
+        this.altura = altura;
     }
   
-    public setLength(length: number) {
-      this.length = length;
+    getArea() {
+        return this.largura * this.altura;
     }
-  
-    public getArea() {
-      return this.width * this.length;
-    }
-}
-  
-export default Rectangle;
-  
+  }
+
+export default Rectangle
