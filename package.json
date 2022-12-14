@@ -1,0 +1,8 @@
+{
+  "name": "Liskov_Substitution",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DIEG0FERNANDES/Liskov_Substitution.git",
+  "author": "DIEG0FERNANDES <cookieezito@hotmail.com>",
+  "license": "MIT"
+}
