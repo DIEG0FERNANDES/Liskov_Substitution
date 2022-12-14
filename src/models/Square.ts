@@ -1,20 +1,24 @@
 import Rectangle from "./Rectangle";
 
-class Square:Rectangle {
+class Square extends Rectangle {
+  largura: number
+  altura: number
+  lados: number
   
-  constructor(side: number) {
-    super(side, side);
+  constructor(lados: number) {
+    super(lados, lados);
+    this._lados= lados
   }
 
-  public setlargura(largura: number) {
-    // A square must maintain equal sides
-    super.setlargura(largura);
-    super.setaltura(largura);
+  setlargura(largura: number) {
+    //**Um quadrado precisa manter lados iguais */
+    super.setLargura(largura);
+    super.setAltura(largura);
   }
 
-  public setaltura(altura: number) {
-    super.setlarguralturath);
-    super.setaltura(altura);
+  setAltura(altura: number) {
+    super.setLargura(altura);
+    super.setAltura(altura);
   }
 }
 export default Square;
