@@ -15,12 +15,12 @@ console.log("________________________________")
 
 console.log("Exemplo 2:")
 
-console.log("aqui jas uma ideia sem verdade")
+const test = new DraftOrder()
+console.log(test)
 
 console.log("________________________________")
 
 console.log("Exemplo 3:")
 
-console.log ("aqui vem a explosao de mentes")
 
 console.log("________________________________")
