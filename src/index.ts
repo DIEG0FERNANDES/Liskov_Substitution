@@ -1,10 +1,13 @@
-import Rectangle from "./models/Rectangle";
-import Square from "./models/square";
+import { Interface } from "readline";
+import Rectangle, { Square } from "./models/Rectangle";
 
 
 console.log("________________________________")
 
 console.log("Exemplo 1:")
+
+const rect: Rectangle = new Square(10); 
+console.log(`${rect}`); 
 
 console.log("________________________________")
 
