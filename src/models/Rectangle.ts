@@ -1,53 +1,29 @@
 class Rectangle {
-    width: number; 
-    length: number;
-    constructor(private largura: number, private altura: number) {
+    largura: number; 
+    altura: number;
+    constructor(largura: number, altura: number) {
         this.altura = altura
         this.largura = largura
     }
-    
-    setWidth(width: number) {
-        this.width = width;
+       
+    getArea(): number{
+        return this.largura * this.altura;
     }
-    
-    setLength(length: number) {
-        this.length = length;
+    isSquare(): boolean {
+        return this.largura === this.altura;
     }
-    
-    getArea() {
-        return this.width * this.length;
-    }
-
 }
 
-export class Square extends Rectangle {
-   
-    constructor(side: number) {
-      super(side, side);
-    }
-    
-    public setWidth(width: number) {
-      super.setWidth(width);
-      super.setLength(width);
-    }
-    
-    public setLength(length: number) {
-      super.setWidth(length);
-      super.setLength(length);
-    } 
+class Square extends Rectangle {
+    _largura: number;
+    _altura: number;
   
+    constructor(largura: number, altura: number) {
+      super(largura, altura);
+  
+      this._largura = largura;
+      this._altura = altura;
+    }
 }
-interface Shape {
-    getArea: () => number;
-  }
-  
-  interface Rectangle extends Shape {
-    width: number;
-    length: number;
-  }
-  
-  interface Square extends Shape {
-    sides: number;
-  }
 
 export default Rectangle
